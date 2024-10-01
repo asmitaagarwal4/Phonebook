@@ -4,6 +4,8 @@
   "description": "full stack web development",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/asmitaagarwal4/Phonebook/issues"
   },
-  "homepage": "https://github.com/asmitaagarwal4/Phonebook#readme"
+  "homepage": "https://github.com/asmitaagarwal4/Phonebook#readme",
+  "dependencies": {
+    "express": "^4.21.0",
+    "phonebook": "file:"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
