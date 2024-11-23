@@ -35,7 +35,7 @@ app.use(express.json())
 morgan.token('body', (req) => {
   return req.body ? JSON.stringify(req.body) : 'no body';
 });
-app.use(morgan(':method :url :status :res[content-length] - :response-time ms :body'));
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms :body')); //log the request body
 //revise what is goin on here
 
 
